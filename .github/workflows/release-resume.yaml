@@ -1,4 +1,4 @@
-name: Build letter document
+name: Build Letter
 on: [push]
 jobs:
   build_latex:
@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-      - name: Compile LaTeX document
+      - name: Compile Letter
         uses: xu-cheng/latex-action@v3
         with:
           root_file: letter.tex
